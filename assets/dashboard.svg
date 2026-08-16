@@ -1,0 +1,82 @@
+<svg width="900" height="330" viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0 H0 V24" fill="none" stroke="#0f3d33" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="330" rx="10" fill="#070d0c"/>
+  <rect x="0.5" y="0.5" width="899" height="329" rx="10" fill="none" stroke="#123a33" stroke-width="1"/>
+
+  <!-- title bar -->
+  <rect x="0" y="0" width="900" height="30" fill="#0a1a17"/>
+  <circle cx="18" cy="15" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="15" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="15" r="5" fill="#27c93f"/>
+  <text x="450" y="19" font-family="monospace" font-size="12" fill="#5fa89c" text-anchor="middle">SYSTEM.DASHBOARD :: ./stats --live</text>
+  <line x1="0" y1="30" x2="900" y2="30" stroke="#123a33"/>
+
+  <!-- LEFT PANEL: LED counters -->
+  <rect x="20" y="50" width="260" height="260" fill="url(#grid)" opacity="0.5"/>
+  <rect x="20" y="50" width="260" height="260" fill="none" stroke="#123a33"/>
+  <text x="150" y="75" font-family="monospace" font-size="12" fill="#4fd6b0" text-anchor="middle">CONTRIBUTIONS.LOG</text>
+
+  <text x="150" y="140" font-family="monospace" font-weight="bold" font-size="46" fill="#00ff9c" text-anchor="middle" filter="url(#glow2)">123</text>
+  <text x="150" y="160" font-family="monospace" font-size="11" fill="#5fa89c" text-anchor="middle">TOTAL COMMITS</text>
+
+  <text x="90" y="220" font-family="monospace" font-weight="bold" font-size="26" fill="#00e0ff" text-anchor="middle" filter="url(#glow2)">7</text>
+  <text x="90" y="238" font-family="monospace" font-size="10" fill="#5fa89c" text-anchor="middle">MAX STREAK</text>
+
+  <text x="210" y="220" font-family="monospace" font-weight="bold" font-size="26" fill="#ff2ec4" text-anchor="middle" filter="url(#glow2)">1</text>
+  <text x="210" y="238" font-family="monospace" font-size="10" fill="#5fa89c" text-anchor="middle">CUR STREAK</text>
+
+  <rect x="40" y="260" width="200" height="30" fill="none" stroke="#123a33"/>
+  <text x="140" y="279" font-family="monospace" font-size="11" fill="#4fd6b0" text-anchor="middle">since Sep 2023</text>
+
+  <!-- MIDDLE PANEL: waveform -->
+  <rect x="300" y="50" width="330" height="150" fill="url(#grid)" opacity="0.5"/>
+  <rect x="300" y="50" width="330" height="150" fill="none" stroke="#123a33"/>
+  <text x="465" y="70" font-family="monospace" font-size="12" fill="#4fd6b0" text-anchor="middle">ACTIVITY.WAVEFORM</text>
+  <polyline points="310,180 340,180 355,150 370,180 420,180 440,120 455,180 480,178 500,175 520,60 540,175 560,180 610,178 620,165"
+            fill="none" stroke="#00ff9c" stroke-width="2" filter="url(#glow2)">
+    <animate attributeName="stroke-dasharray" values="0,600;600,600" dur="2.5s" fill="freeze"/>
+  </polyline>
+
+  <!-- MIDDLE PANEL: VU meters (top langs) -->
+  <rect x="300" y="210" width="330" height="100" fill="url(#grid)" opacity="0.5"/>
+  <rect x="300" y="210" width="330" height="100" fill="none" stroke="#123a33"/>
+  <text x="465" y="228" font-family="monospace" font-size="12" fill="#4fd6b0" text-anchor="middle">TOP.LANG.METERS</text>
+
+  <text x="315" y="248" font-family="monospace" font-size="11" fill="#c9d1d9">Python</text>
+  <rect x="380" y="240" width="220" height="10" fill="#0f3d33"/>
+  <rect x="380" y="240" width="180" height="10" fill="#00ff9c" filter="url(#glow2)"/>
+
+  <text x="315" y="266" font-family="monospace" font-size="11" fill="#c9d1d9">C++</text>
+  <rect x="380" y="258" width="220" height="10" fill="#0f3d33"/>
+  <rect x="380" y="258" width="90" height="10" fill="#00e0ff" filter="url(#glow2)"/>
+
+  <text x="315" y="284" font-family="monospace" font-size="11" fill="#c9d1d9">Jupyter</text>
+  <rect x="380" y="276" width="220" height="10" fill="#0f3d33"/>
+  <rect x="380" y="276" width="60" height="10" fill="#ff2ec4" filter="url(#glow2)"/>
+
+  <text x="315" y="302" font-family="monospace" font-size="11" fill="#c9d1d9">C</text>
+  <rect x="380" y="294" width="220" height="10" fill="#0f3d33"/>
+  <rect x="380" y="294" width="35" height="10" fill="#ffbd2e" filter="url(#glow2)"/>
+
+  <!-- RIGHT PANEL: gauge -->
+  <rect x="650" y="50" width="230" height="260" fill="url(#grid)" opacity="0.5"/>
+  <rect x="650" y="50" width="230" height="260" fill="none" stroke="#123a33"/>
+  <text x="765" y="70" font-family="monospace" font-size="12" fill="#4fd6b0" text-anchor="middle">FOCUS.GAUGE</text>
+
+  <circle cx="765" cy="170" r="70" fill="none" stroke="#123a33" stroke-width="10"/>
+  <circle cx="765" cy="170" r="70" fill="none" stroke="#00ff9c" stroke-width="10"
+          stroke-dasharray="330 440" stroke-linecap="round" transform="rotate(-210 765 170)" filter="url(#glow2)"/>
+  <text x="765" y="178" font-family="monospace" font-weight="bold" font-size="26" fill="#00ff9c" text-anchor="middle">ML</text>
+
+  <text x="765" y="260" font-family="monospace" font-size="11" fill="#5fa89c" text-anchor="middle">core.discipline = "machine</text>
+  <text x="765" y="276" font-family="monospace" font-size="11" fill="#5fa89c" text-anchor="middle">learning + hardware"</text>
+</svg>
