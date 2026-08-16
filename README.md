@@ -54,47 +54,6 @@ philosophy  : "if it doesn't break, you didn't push it far enough"
 > should probably stay off GitHub.
 ```
 
-<div align="center"><img src="assets/divider.svg" width="100%"/></div>
-
-### `$ ./stats --live`
-
-<div align="center">
-
-<img src="assets/dashboard.svg" width="100%"/>
-
-</div>
-
-<sub>⚠️ the numbers above are a styled static snapshot — swap in your real totals from the widgets below, or edit `assets/dashboard.svg` directly.</sub>
-
-<div align="center">
-
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=viditkaushik&show_icons=true&theme=chartreuse-dark&bg_color=0d1117&title_color=00ff9c&icon_color=00ff9c&text_color=c9d1d9&border_color=123a33&hide_border=false&hide_title=true" />
-<img height="150" src="https://github-readme-streak-stats.herokuapp.com/?user=viditkaushik&theme=dark&background=0d1117&stroke=123a33&ring=00ff9c&fire=00ff9c&currStreakLabel=00ff9c&border=123a33" />
-
-</div>
-
-<div align="center"><img src="assets/divider.svg" width="100%"/></div>
-
-### `$ ./hardware_selftest.sh --verbose`
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=15&duration=1200&pause=200&color=00FF9C&background=0D1117&center=true&vCenter=true&multiline=true&width=760&height=280&lines=%5BBOOT%5D+Initializing+kernel...;%5B+OK+%5D+CPU.............+8+cores+online;%5B+OK+%5D+RAM.............+32GB+detected;%5B+OK+%5D+GPU.............+CUDA+available;%5B+OK+%5D+Arduino.........+%2Fdev%2FttyUSB0+connected;%5B+OK+%5D+Raspberry+Pi....+SSH+link+established;%5B+OK+%5D+Sensors.........+calibrated;%5BWARN%5D+Coffee..........+critically+low;%5B+OK+%5D+ML+models.......+weights+loaded;%5BDONE%5D+System+ready.+Welcome%2C+Vidit." alt="Hardware self-test" />
-
-</div>
-
-<div align="center"><img src="assets/divider.svg" width="100%"/></div>
-
-### `$ ./trophies --unlock`
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=viditkaushik&theme=chalk&no-frame=true&column=7&margin-w=8&margin-h=8" />
-
-</div>
-
-<div align="center"><img src="assets/divider.svg" width="100%"/></div>
-
 ### `$ ./connect.sh --socials`
 
 <div align="center">
